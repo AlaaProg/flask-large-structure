@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"dependencies": {
+		"css-loader": "^4.2.2",
+		"vue": "^2.6.12",
+		"vue-loader": "^15.9.3",
+		"vue-style-loader": "^4.1.2",
+		"vue-template-compiler": "^2.6.12",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"scripts": {
+
+		"watch":"./node_modules/webpack/bin/webpack.js --progress --hide-modules  --watch  --config=./webpack.config.js --mode development",
+		"hot": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=./webpack.config.js"
+	}
+}
