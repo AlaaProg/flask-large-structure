@@ -265,7 +265,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n\n\n\n\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component(\"v-hello\", ()=> Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0)]).then(__webpack_require__.bind(null, /*! @components/HelloWorld.vue */ \"./resources/js/components/HelloWorld.vue\")));\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component(\"v-test\", ()=> Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! @components/Test.vue */ \"./resources/js/components/Test.vue\")));\n\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n\tel:'#app',\n})\n\n//# sourceURL=webpack:///./resources/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n\n\n\nvue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].component(\"v-hello\", ()=> Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0)]).then(__webpack_require__.bind(null, /*! @components/HelloWorld.vue */ \"./resources/js/components/HelloWorld.vue\")));\n\nnew vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n\tel:'#app',\n})\n\n//# sourceURL=webpack:///./resources/js/app.js?");
 
 /***/ }),
 
