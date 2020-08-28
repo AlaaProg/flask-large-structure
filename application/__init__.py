@@ -15,7 +15,7 @@ def create_app(**config:dict) -> Flask :
 		static_folder='public/static'
 	)
 
-	app.config.from_object('config.Config')
+	app.config.from_object('application.config.Config')
 	app.config.update(**config) 
 
 	
