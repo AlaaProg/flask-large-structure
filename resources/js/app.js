@@ -2,10 +2,10 @@ import Vue from "vue";
 
 
 
-Vue.config.productionTip = false
+Vue.component("v-hello", ()=> import("@components/HelloWorld.vue"));
+Vue.component("v-test", ()=> import("@components/Test.vue"));
 
-Vue.component("hello-world", () => import("@components/HelloWorld.vue"));
 
 new Vue({
-
-}).$mount('#app');
+	el:'#app',
+})

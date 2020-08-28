@@ -3,8 +3,9 @@ from flask import Blueprint, render_template
 
 
 app = Blueprint('MainAPP', __name__,
-		template_folder=os.path.join(os.getcwd(), 'resources/templates')
-	);
+
+		template_folder=os.path.join(os.getcwd(), 'resources/templates'),
+	)
 
 
 

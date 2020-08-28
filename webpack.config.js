@@ -6,7 +6,6 @@ const path    = require('path');
 
 
 module.exports = {
-  // runtimeCompiler: true,
   entry: [
 
     path.join(__dirname, 'resources/js', 'app.js'),
@@ -18,21 +17,24 @@ module.exports = {
         use: 'vue-loader'
       },
       {
-        test:/\.css$/,
-        use:['vue-style-loader', 'css-loader' ]
+        test: /\.css$/,
+        use: [
+          'vue-style-loader','css-loader'
+        ]
       },
       {
-        test:/\.scss$/,
-        use:[
+        test: /\.scss$/,
+        use: [
           'vue-style-loader',
-          "css-loader",          
+          'css-loader',
+          'sass-loader'
         ]
       }
     ]
   },
   resolve: {
-    modules: ["node_modules"],
-    extensions: [ '.js', '.vue' , '.json', '*'],
+    modules: ["node_modules", 'resources/js/'],
+    extensions: [ '.js', '.vue' , '.json', '*' ],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': path.resolve(__dirname, 'resources/js/'),
@@ -40,10 +42,10 @@ module.exports = {
     }
   },
   output: {
-
+    chunkFilename: '[id].app.js',
     filename: 'app.js',
     path: path.resolve(__dirname, 'public/static/js'),
-    publicPath: 'static/js',
+    publicPath: '/static/js/'
   }, 
   devServer: {
 

@@ -11,13 +11,14 @@ def create_app(**config:dict) -> Flask :
 
 	app = Flask(
 		__name__,
-		template_folder='public',
+		template_folder='public/',
 		static_folder='public/static'
 	)
 
 	app.config.from_object('config.Config')
 	app.config.update(**config) 
 
+	
 
 	# blueprint register 
 	from blueprint import register
