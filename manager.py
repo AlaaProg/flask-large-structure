@@ -1,8 +1,10 @@
-from application import create_app 
+from flask_migrate import Migrate
+from application import create_app , db
 
 
 app = create_app()
 
+Migrate(app, db)
 
 if app.config.get("ENV") != "producation": 	
 	@app.after_request
