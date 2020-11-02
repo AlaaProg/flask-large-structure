@@ -1,8 +1,4 @@
-import os
 import unittest
-import json
-from flask_sqlalchemy import SQLAlchemy
-
 from application import create_app , db
 
 class BaseTestCase(unittest.TestCase):
